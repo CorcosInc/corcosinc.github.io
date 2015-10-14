@@ -129,10 +129,12 @@
       email.style.visibility = "hidden";
     }, false);
     contact.addEventListener("touchstart", function(e) {
+      console.log("touch start");
       e.preventDefault();
-      email.style.visible = "visible";
+      email.style.visibility = "visible";
     }, false);
     contact.addEventListener("touchend", function(e) {
+      console.log("touch end");
       email.style.visibility = "hidden";
     }, false);
 
