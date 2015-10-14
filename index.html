@@ -3,12 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600);
     body, div, video, h1, p {
       padding: 0;
       margin: 0;
     }
     body {
-      font-family: 'Roboto Condensed', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
     }
     .background {
       width: 100vw;
@@ -75,10 +76,10 @@
       margin-left: auto;
       margin-right: auto;
       visibility: hidden;
-      -webkit-transition: all 1s ease;
+      /*-webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
       -o-transition: all 1s ease;
-      transition: all 1s ease;
+      transition: all 1s ease;*/
     }
     .email p {
       text-align:center;
@@ -120,7 +121,7 @@
     contact.addEventListener("mouseleave", function(e) {
       // tooltip.style.visibility = "hidden";
 
-      // email.style.visibility = "hidden";
+      email.style.visibility = "hidden";
     }, false);
   </script>
 
