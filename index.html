@@ -55,9 +55,18 @@
       color: white;
       font-size: 2em;
     }
+    .tooltip {
+      position: absolute
+    }
   </style>
   <script>
+    var contact = document.getElementById("contact");
+    var tooltip = document.getElementById("tooltip");
 
+    test.addEventListener("mouseenter", function( e ) {
+      e.target.style.color = "purple";
+
+    }, false);
   </script>
 </head>
 
@@ -67,8 +76,10 @@
   </div>
   <div class="overlay"></div>
   <div class="logo-container">
-    <h1>CORCOS<span style="color:red;">,</span>INC</h1>
-    <p>Contact</p>
-    <!-- <p>leon@corcosinc.com</p> -->
+    <h1>CORCOS<span style="color:red;">,</span>INC.</h1>
+    <p id="contact">Contact</p>
+  </div>
+  <div class="tooltip" id="tooltip">
+    <p>leon@corcosinc.com</p>
   </div>
 </body>
