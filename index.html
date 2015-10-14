@@ -129,6 +129,7 @@
       email.style.visibility = "hidden";
     }, false);
     contact.addEventListener("touchstart", function(e) {
+      e.preventDefault();
       email.style.visible = "visible";
     }, false);
     contact.addEventListener("touchend", function(e) {
