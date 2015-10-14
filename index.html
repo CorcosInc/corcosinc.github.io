@@ -67,6 +67,15 @@
     .tooltip p {
       color: black;
     }
+    .email {
+      position: absolute;
+      top: 70vh;
+      left: auto;
+    }
+    .email p {
+      color: white;
+      font-size: 2em;
+    }
   </style>
 </head>
 
@@ -79,23 +88,25 @@
     <h1>CORCOS<span style="color:red;">,</span>INC.</h1>
     <p id="contact">Contact</p>
   </div>
-  <div class="tooltip" id="tooltip">
-    <p>leon@corcosinc.com</p>
+  <div class="email" id="email">
+    <p>info@corcosinc.com</p>
   </div>
+  <!-- <div class="tooltip" id="tooltip">
+    <p>info@corcosinc.com</p>
+  </div> -->
 
   <script>
     var contact = document.getElementById("contact");
-    var tooltip = document.getElementById("tooltip");
+    // var tooltip = document.getElementById("tooltip");
 
     contact.addEventListener("mouseenter", function(e) {
-      tooltip.style.visibility = "visible";
-      console.log(e);
-      tooltip.style.top = e.pageY;
-      tooltip.style.left = e.pageX;
-
+      // tooltip.style.visibility = "visible";
+      // console.log(e);
+      // tooltip.style.top = e.pageY;
+      // tooltip.style.left = e.pageX;
     }, false);
     contact.addEventListener("mouseleave", function(e) {
-      tooltip.style.visibility = "hidden";
+      // tooltip.style.visibility = "hidden";
     }, false);
   </script>
 
