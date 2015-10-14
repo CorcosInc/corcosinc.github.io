@@ -54,20 +54,12 @@
     .logo-container p {
       color: white;
       font-size: 2em;
+      cursor: pointer;
     }
     .tooltip {
       position: absolute
     }
   </style>
-  <script>
-    var contact = document.getElementById("contact");
-    var tooltip = document.getElementById("tooltip");
-
-    contact.addEventListener("mouseenter", function( e ) {
-      e.target.style.color = "purple";
-
-    }, false);
-  </script>
 </head>
 
 <body>
@@ -82,4 +74,15 @@
   <div class="tooltip" id="tooltip">
     <p>leon@corcosinc.com</p>
   </div>
+  
+  <script>
+    var contact = document.getElementById("contact");
+    var tooltip = document.getElementById("tooltip");
+
+    contact.addEventListener("mouseenter", function(e) {
+      e.target.style.color = "purple";
+
+    }, false);
+  </script>
+
 </body>
