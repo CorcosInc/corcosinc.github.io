@@ -57,7 +57,14 @@
       cursor: pointer;
     }
     .tooltip {
-      position: absolute
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      background-color: white;
+    }
+    .tooltip p {
+      color: black;
     }
   </style>
 </head>
@@ -74,14 +81,17 @@
   <div class="tooltip" id="tooltip">
     <p>leon@corcosinc.com</p>
   </div>
-  
+
   <script>
     var contact = document.getElementById("contact");
     var tooltip = document.getElementById("tooltip");
 
     contact.addEventListener("mouseenter", function(e) {
-      e.target.style.color = "purple";
+      tooltip.style.visiblity = "visible";
 
+    }, false);
+    contact.addEventListener("mouseleave", function(e) {
+      tooltip.style.visibility = "hidden";
     }, false);
   </script>
 
