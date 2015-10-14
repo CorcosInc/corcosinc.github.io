@@ -70,9 +70,18 @@
     .email {
       position: absolute;
       top: 70vh;
-      left: auto;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      visibility: hidden;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
     }
     .email p {
+      text-align:center;
       color: white;
       font-size: 2em;
     }
@@ -98,15 +107,20 @@
   <script>
     var contact = document.getElementById("contact");
     // var tooltip = document.getElementById("tooltip");
+    var email = document.getElementById("email");
 
     contact.addEventListener("mouseenter", function(e) {
       // tooltip.style.visibility = "visible";
       // console.log(e);
       // tooltip.style.top = e.pageY;
       // tooltip.style.left = e.pageX;
+
+      email.style.visibility = "visible";
     }, false);
     contact.addEventListener("mouseleave", function(e) {
       // tooltip.style.visibility = "hidden";
+
+      // email.style.visibility = "hidden";
     }, false);
   </script>
 
