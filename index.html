@@ -90,8 +90,8 @@
     contact.addEventListener("mouseenter", function(e) {
       tooltip.style.visibility = "visible";
       console.log(e);
-      // tooltip.style.top = e.;
-      // tooltip.style.left = "";
+      tooltip.style.top = e.pageY;
+      tooltip.style.left = e.pageX;
 
     }, false);
     contact.addEventListener("mouseleave", function(e) {
